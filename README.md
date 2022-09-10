@@ -1,17 +1,12 @@
-Kindle weather and calendar displayer
+Eink weather and calendar displayer
 ====================================
 
 Author: Pablo Jiménez Mateo
 
-![ScreenShot](https://raw.github.com/gef3233/kindle-wallpaper/master/with_kindle.JPG)
-
-Do you use a Kindle and hope that the wallpapers could be more useful? Well, that has just changed,
-with this program you will display the weather and some task to do retrieved from Open Weather
-and Google calendar!
-
 You can see a preview in the preview.png file
 
 Based on the idea of Matthew Petroff: http://www.mpetroff.net/archives/2012/09/14/kindle-weather-display/
+and work of Pablo Jiménez Mateo
 
 Dependencies
 ------------
