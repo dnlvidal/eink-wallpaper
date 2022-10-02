@@ -17,7 +17,7 @@ WIDTH=600
 HEIGHT=800
 f = codecs.open('wallpaper.svg', 'w', encoding='utf-8')
 f.write("""
-<svg width="%d" height="%d" xmlns="http://www.w3.org/2000/svg">
+<svg width="%d" height="%d" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     .w_tstamp   { font: 14px sans-serif; }
     .w_temp     { font: 18px sans-serif; }
@@ -105,7 +105,7 @@ for f_item in forecast["list"]:
     print(json.dumps(f_item, indent=4))
     print(image_path)
     image_path = icons_path+'error.svg'
-  svg_icon='<image x="%d" y="%d" href="%s" height="%d" width="%d" />'            %(arr_x+rel_icon_x,arr_y+rel_icon_y,image_path,icon_size,icon_size)
+  svg_icon='<image x="%d" y="%d" xlink:href="%s" height="%d" width="%d" />'            %(arr_x+rel_icon_x,arr_y+rel_icon_y,image_path,icon_size,icon_size)
   svg_temp='<text  x="%d" y="%d" text-anchor="middle" class="w_temp">%d°C</text>'%(arr_x+rel_text_x,arr_y+rel_temp_y,temp)
   svg_day ='<text  x="%d" y="%d" text-anchor="middle" class="w_tstamp">%s</text>'%(arr_x+rel_text_x,arr_y+rel_date_y,tstamp)
   f.write(svg_day+"\n")
